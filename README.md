@@ -1,40 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Notre Dernière app fullstack
 
-## Getting Started
+## Objectifs
 
-First, run the development server:
+- Utiliser le pages router de NextJS en conditions réelles
+- Utiliser l'authentification avec Github et la relier à une table Utilisateurs
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Le sujet
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+On va repartir sur une application de gestion de tâches ...
+La fameuse todo list ! Promis c'est la dernière fois !
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Les fonctionnalités
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Utiliser la page de connexion de Github pour s'authentifier
+- Créer une base de données avec les utilisateurs qui se sont connectés (name est unique et venant de Github)
+- Créer une table pour LES todo listes d'un utilisateur (one to Many)
+- Ne rien stocker en localstorage !
+- Créer une page pour afficher les todo listes d'un utilisateur
+- Créer une page pour créer une todo list
+- Créer une page pour modifier une todo list
+- Créer une nouvelle table "SimonGame" pour stocker les scores des utilisateurs
+    - model : { score: number, user: User, date: Date }
+    - Créer une page pour jouer au jeu de Simon
+    - Créer une page pour afficher les meilleurs scores du joueur et du site complet
+- Créer le jeu du Simon !
